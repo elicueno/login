@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>elicueno</title>
+
+		<style>
+			.name-wrapper {
+				position: relative;
+			}
+
+			.name-wrapper:hover > .foreground {
+				width: 125px;
+				/* visibility: visible; */
+				opacity: 1;
+			}
+
+			.name-wrapper div {
+				padding: 10px 15px;
+				font-size: 30px;
+				font-weight: 700;
+				box-sizing: border-box;
+			}
+
+			.name-wrapper .foreground {
+				position: absolute;
+				top: 0;
+				left: 0;
+				z-index: 9;
+				width: 0px;
+				overflow: hidden;
+				transition: all 300ms ease-in-out;
+				/* background-color: orangered; */
+				/* visibility: hidden; */
+				opacity: 0;
+			}
+
+			.foreground span {
+				color: black;
+			}
+
+			span {
+				color: white;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!-- <div class="name-wrapper">
+			<div class="foreground"><span>Edmar</span></div>
+			<div class="background"><span>Edmar</span></div>
+		</div> -->
+
+		<div class="card">
+			<span class="close-btn"></span>
+			<h1 class="login-title">LOGIN FORM</h1>
+
+			<div class="form-wrapper">
+				<label for="">Username</label>
+				<input type="text" placeholder="Please type your email" />
+			</div>
+
+			<div class="form-wrapper">
+				<label for="">Password</label>
+				<input type="text" placeholder="Please type your password" />
+				<a href="#" class="anchor">Forgot Password?</a>
+			</div>
+
+			<button class="login-btn">LOGIN</button>
+
+			<div class="sign-up">
+				<label for="">Or Sign Up Using</label>
+				<div class="social-media-wrapper">
+					<img src="/assets/FB.webp" alt="" />
+					<img src="/assets/twitter.webp" alt="" />
+					<img src="/assets/Gmail-logo.png" alt="" />
+
+					<div class="bg-image"></div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
